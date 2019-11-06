@@ -1,0 +1,70 @@
+:root {
+    --Kleur1: #05386B;
+    --Kleur2: #379683;
+    --Kleur3: #5CDB95;
+    --Kleur4: #8EE4AF;
+    --Kleur5: #EDF5E1;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card {
+    padding: 0px;
+    margin: 50px;
+    transition: 2s;
+}
+
+.button1 {
+    margin: 0px;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--Kleur1);
+}
+
+.button1:hover {
+    cursor: pointer;
+}
+
+.button2 {
+    margin: 0px;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, var(--Kleur2), var(--Kleur3));
+}
+
+.button2:hover {
+    cursor: pointer;
+}
+
+.button3 {
+    margin: 0px;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border: 2px solid var(--Kleur1);
+    border-radius: 25px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.button3:hover {
+    color: white;
+    font-weight: normal;
+    background-color: var(--Kleur1);
+    transition: 0.5s;
+    cursor: pointer;
+}

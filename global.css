@@ -1,4 +1,5 @@
 :root {
+    --Kleurhover: #042d57;
     --Kleur1: #05386B;
     --Kleur2: #379683;
     --Kleur3: #5CDB95;
@@ -21,6 +22,13 @@
     transition: 2s;
 }
 
+.card h2 {
+    margin-bottom: 10px;
+}
+
+
+
+/* Buttons */
 .button1 {
     margin: 0px;
     padding: 10px 20px 10px 20px;
@@ -33,6 +41,7 @@
 
 .button1:hover {
     cursor: pointer;
+    background-color: var(--Kleurhover);
 }
 
 .button2 {
@@ -67,4 +76,91 @@
     background-color: var(--Kleur1);
     transition: 0.5s;
     cursor: pointer;
+}
+
+
+
+/* Input */
+input[type="text"],
+input[list],
+select,
+textarea {
+    text-align: left;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+input[type="checkbox"]:checked {
+    background: var(--Kleur1);
+    border: 1px solid var(--Kleurhover);
+}
+
+input[type="color"] {
+    /* TODO */
+}
+
+input[type="file"] {
+    /* TODO */
+}
+
+input[type="button"], 
+input[type="submit"] {
+    margin: 0px;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--Kleur1);
+}
+
+input[type="button"]:hover, 
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--Kleurhover);
+}
+
+input[type="range"] {
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 5px;
+    background: #ced4da;
+    outline: none;
+    transition: background-color 0.7s;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    background: var(--Kleurhover);
+} 
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--Kleur1);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.7s;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: var(--Kleur1);
+    cursor: pointer;
+    border-radius: 50%;
 }

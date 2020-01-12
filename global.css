@@ -1,10 +1,10 @@
 :root {
-    --Kleurhover: #042d57;
-    --Kleur1: #05386B;
-    --Kleur2: #379683;
-    --Kleur3: #5CDB95;
-    --Kleur4: #8EE4AF;
-    --Kleur5: #EDF5E1;
+    --Color0: #042d57;
+    --Color1: #05386B;
+    --Color2: #379683;
+    --Color3: #5CDB95;
+    --Color4: #8EE4AF;
+    --Color5: #EDF5E1;
 }
 
 * {
@@ -36,12 +36,12 @@
     color: white;
     border: none;
     border-radius: 25px;
-    background-color: var(--Kleur1);
+    background-color: var(--Color1);
 }
 
 .button1:hover {
     cursor: pointer;
-    background-color: var(--Kleurhover);
+    background-color: var(--Color0);
 }
 
 .button2 {
@@ -51,7 +51,7 @@
     color: white;
     border: none;
     border-radius: 25px;
-    background-image: linear-gradient(to bottom right, var(--Kleur2), var(--Kleur3));
+    background-image: linear-gradient(to bottom right, var(--Color2), var(--Color3));
 }
 
 .button2:hover {
@@ -64,7 +64,7 @@
     font-size: 15px;
     font-weight: bold;
     color: black;
-    border: 2px solid var(--Kleur1);
+    border: 2px solid var(--Color1);
     border-radius: 25px;
     background-color: transparent;
     transition: 0.5s;
@@ -73,16 +73,34 @@
 .button3:hover {
     color: white;
     font-weight: normal;
-    background-color: var(--Kleur1);
+    background-color: var(--Color1);
     transition: 0.5s;
     cursor: pointer;
 }
 
+table {
+    border-collapse: collapse;
+}
 
+th, td {
+    padding: 5px;
+    border: 1px solid #ced4da;
+}
 
 /* Input */
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
 input[type="text"],
-input[list],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
 select,
 textarea {
     text-align: left;
@@ -95,16 +113,31 @@ textarea {
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     outline: none;
 }
 
 input[type="checkbox"]:checked {
-    background: var(--Kleur1);
-    border: 1px solid var(--Kleurhover);
+    background: var(--Color1);
+    border: 1px solid var(--Color0);
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 50%;
+    outline: none;
+}
+
+input[type="radio"]:checked {
+    background: var(--Color1);
+    border: 1px solid var(--Color0);
 }
 
 input[type="color"] {
@@ -115,21 +148,27 @@ input[type="file"] {
     /* TODO */
 }
 
+input[type="image"] {
+    /* TODO */
+}
+
 input[type="button"], 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
     margin: 0px;
     padding: 10px 20px 10px 20px;
     font-size: 15px;
     color: white;
     border: none;
     border-radius: 25px;
-    background-color: var(--Kleur1);
+    background-color: var(--Color1);
 }
 
 input[type="button"]:hover, 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
     cursor: pointer;
-    background-color: var(--Kleurhover);
+    background-color: var(--Color0);
 }
 
 input[type="range"] {
@@ -143,7 +182,7 @@ input[type="range"] {
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
-    background: var(--Kleurhover);
+    background: var(--Color0);
 } 
 
 input[type="range"]::-webkit-slider-thumb {
@@ -151,7 +190,7 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 15px;
     height: 15px;
-    background: var(--Kleur1);
+    background: var(--Color1);
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.7s;
@@ -160,7 +199,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
     width: 15px;
     height: 15px;
-    background: var(--Kleur1);
+    background: var(--Color1);
     cursor: pointer;
     border-radius: 50%;
 }

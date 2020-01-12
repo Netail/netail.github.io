@@ -7,87 +7,6 @@
     --Color5: #EDF5E1;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-}
-
-.card {
-    padding: 0px;
-    margin: 50px;
-    transition: 2s;
-}
-
-.card h2 {
-    margin-bottom: 10px;
-}
-
-
-
-/* Buttons */
-.button1 {
-    margin: 0px;
-    padding: 10px 20px 10px 20px;
-    font-size: 15px;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    background-color: var(--Color1);
-}
-
-.button1:hover {
-    cursor: pointer;
-    background-color: var(--Color0);
-}
-
-.button2 {
-    margin: 0px;
-    padding: 10px 20px 10px 20px;
-    font-size: 15px;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    background-image: linear-gradient(to bottom right, var(--Color2), var(--Color3));
-}
-
-.button2:hover {
-    cursor: pointer;
-}
-
-.button3 {
-    margin: 0px;
-    padding: 10px 20px 10px 20px;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    border: 2px solid var(--Color1);
-    border-radius: 25px;
-    background-color: transparent;
-    transition: 0.5s;
-}
-
-.button3:hover {
-    color: white;
-    font-weight: normal;
-    background-color: var(--Color1);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 5px;
-    border: 1px solid #ced4da;
-}
-
-/* Input */
 input[type="date"],
 input[type="datetime-local"],
 input[type="email"],
@@ -103,11 +22,31 @@ input[type="week"],
 input:not([type]),
 select,
 textarea {
+    padding: 5px 10px 5px 10px;
     text-align: left;
     font-size: 15px;
-    padding: 5px 10px 5px 10px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
+    background: #ffffff;
+}
+
+input[type="date"]:disabled,
+input[type="datetime-local"]:disabled,
+input[type="email"]:disabled,
+input[type="month"]:disabled,
+input[type="number"]:disabled,
+input[type="password"]:disabled,
+input[type="search"]:disabled,
+input[type="tel"]:disabled,
+input[type="text"]:disabled,
+input[type="time"]:disabled,
+input[type="url"]:disabled,
+input[type="week"]:disabled,
+input:not([type]):disabled,
+select:disabled,
+textarea:disabled {
+    background: #e9ecef;
+    cursor: default;
 }
 
 input[type="checkbox"] {
@@ -120,11 +59,6 @@ input[type="checkbox"] {
     outline: none;
 }
 
-input[type="checkbox"]:checked {
-    background: var(--Color1);
-    border: 1px solid var(--Color0);
-}
-
 input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
@@ -135,9 +69,46 @@ input[type="radio"] {
     outline: none;
 }
 
+input[type="checkbox"]:checked,
 input[type="radio"]:checked {
     background: var(--Color1);
     border: 1px solid var(--Color0);
+}
+
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled {
+    background: #e9ecef;
+    cursor: default;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    background: rgb(247, 247, 247);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked:hover,
+input[type="radio"]:checked:hover {
+    background: var(--Color0);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:disabled:hover,
+input[type="radio"]:disabled:hover {
+    background: #e9ecef;
+    cursor: default;
+}
+
+input[type="checkbox"]:checked:disabled,
+input[type="radio"]:checked:disabled {
+    background: var(--Color0);
+    cursor: default;
+}
+
+input[type="checkbox"]:checked:disabled:hover,
+input[type="radio"]:checked:disabled:hover {
+    background: var(--Color0);
+    cursor: default;
 }
 
 input[type="color"] {
@@ -171,6 +142,13 @@ input[type="reset"]:hover {
     background-color: var(--Color0);
 }
 
+input[type="button"]:disabled, 
+input[type="submit"]:disabled,
+input[type="reset"]:disabled {
+    cursor: default;
+    background-color: var(--Color0);
+}
+
 input[type="range"] {
     border-radius: 5px;
     appearance: none;
@@ -178,10 +156,15 @@ input[type="range"] {
     height: 5px;
     background: #ced4da;
     outline: none;
-    transition: background-color 0.7s;
 }
 
-input[type="range"]:focus::-webkit-slider-thumb {
+input[type="range"]:hover::-webkit-slider-thumb {
+    cursor: pointer;
+    background: var(--Color0);
+} 
+
+input[type="range"]:disabled::-webkit-slider-thumb {
+    cursor: default;
     background: var(--Color0);
 } 
 
@@ -193,7 +176,15 @@ input[type="range"]::-webkit-slider-thumb {
     background: var(--Color1);
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color 0.7s;
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+    background: var(--Color0);
+} 
+
+input[type="range"]:disabled::-moz-range-thumb {
+    cursor: default;
+    background: var(--Color0);
 }
 
 input[type="range"]::-moz-range-thumb {

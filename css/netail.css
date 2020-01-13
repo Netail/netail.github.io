@@ -9,6 +9,7 @@
 
 input[type="date"],
 input[type="datetime-local"],
+input[type="color"],
 input[type="email"],
 input[type="month"],
 input[type="number"],
@@ -32,6 +33,7 @@ textarea {
 
 input[type="date"]:disabled,
 input[type="datetime-local"]:disabled,
+input[type="color"]:disabled,
 input[type="email"]:disabled,
 input[type="month"]:disabled,
 input[type="number"]:disabled,
@@ -109,10 +111,6 @@ input[type="checkbox"]:checked:disabled:hover,
 input[type="radio"]:checked:disabled:hover {
     background: var(--Color0);
     cursor: default;
-}
-
-input[type="color"] {
-    /* TODO */
 }
 
 input[type="file"] {

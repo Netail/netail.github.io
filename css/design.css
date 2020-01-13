@@ -1,3 +1,12 @@
+:root {
+    --Color0: #042d57;
+    --Color1: #05386B;
+    --Color2: #379683;
+    --Color3: #5CDB95;
+    --Color4: #8EE4AF;
+    --Color5: #EDF5E1;
+}
+
 * {
     margin: 0px;
     padding: 0px;

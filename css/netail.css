@@ -242,6 +242,7 @@ input[type="reset"]:disabled {
 
 /* Range */
 input[type="range"] {
+    width: 150px;
     border-radius: 5px;
     appearance: none;
     -webkit-appearance: none;
@@ -271,6 +272,8 @@ input[type="range"]::-webkit-slider-thumb {
     height: 15px;
     background-color: var(--colorButtons);
     cursor: pointer;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
 }
 
@@ -288,5 +291,42 @@ input[type="range"]::-moz-range-thumb {
     height: 15px;
     background-color: var(--colorButtons);
     cursor: pointer;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    border: none;
+    width: 150px;
+    height: 15px;
+    color: var(--colorButtons);
+    background-color: var(--colorBorder);
+}
+
+progress[value]::-webkit-progress-bar {
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background-color: var(--colorBorder);
+}
+
+progress[value]::-webkit-progress-value {
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background-color: var(--colorButtons);
+}
+
+progress[value]::-moz-progress-bar {
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background-color: var(--colorButtons);
 }

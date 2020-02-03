@@ -244,8 +244,8 @@ input[type="reset"]:disabled {
 input[type="range"] {
     width: 150px;
     border-radius: 5px;
-    appearance: none;
     -webkit-appearance: none;
+    appearance: none;
     height: 5px;
     background-color: var(--colorBorder);
     outline: none;
@@ -328,5 +328,6 @@ progress[value]::-moz-progress-bar {
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
-    background-color: var(--colorButtons);
+    color: var(--colorButtons);
+    background-color: var(--colorBorder);
 }

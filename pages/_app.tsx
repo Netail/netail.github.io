@@ -1,9 +1,16 @@
-import '../styles/globals.css';
+import '../styles/globals.scss';
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 
 const App = ({ Component, pageProps }: AppProps) => {
     return (
-        <Component {...pageProps} />
+        <>
+            <Head>
+                <title>Maikel van Dort</title>
+                <meta name='description' content='Portfolio of Maikel van Dort' />
+            </Head>
+            <Component {...pageProps} />
+        </>
     );
 }
 

@@ -1,0 +1,71 @@
+@import '../../styles/mq';
+
+.typography {
+    margin: 0;
+}
+
+.heading1 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1.2em;
+
+    @include mq($from: lg) {
+        font-size: 115px;
+    }
+}
+
+.heading2 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.2em;;
+
+    @include mq($from: lg) {
+        font-size: 72px;
+    }
+}
+
+.heading3 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+
+.body1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.body2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.sub {
+    opacity: 0.7;
+}
+
+.align {
+    &-left {
+        text-align: left;
+    }
+    &-center {
+        text-align: center;
+    }
+    &-right {
+        text-align: right;
+    }
+}

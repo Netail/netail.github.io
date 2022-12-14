@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.image {
+    border-radius: 8px;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: cover;
+}

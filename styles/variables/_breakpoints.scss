@@ -1,0 +1,31 @@
+$breakpoints: (
+    xs: (
+        min: 0px,
+        max: 575px,
+    ),
+    sm: (
+        min: 576px,
+        max: 767px,
+    ),
+    md: (
+        min: 768px,
+        max: 991px,
+    ),
+    lg: (
+        min: 992px,
+        max: 1199px,
+    ),
+    xl: (
+        min: 1200px,
+        max: 1440px,
+    ),
+);
+
+@function get-breakpoint($target, $breakpoint) {
+    @if map.has-key($breakpoints, $target, $breakpoint) {
+        @return map.get($breakpoints, $target, $breakpoint);
+    } @else {
+        @warn "Breakpoint #{$breakpoint} does not exist in #{$target}.";
+        @return null;
+    }
+}

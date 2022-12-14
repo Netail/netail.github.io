@@ -1,0 +1,23 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mq';
+
+.nav {
+    padding: 2rem;
+    top: 0;
+    position: sticky;
+    background-color: rgba($color-background-primary, 0.7);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    @include mq($to: lg) {
+        display: none;
+    }
+}
+
+.icon {
+    align-self: center;
+    width: 24px;
+    height: 24px;
+}

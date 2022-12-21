@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import Column from '../../components/column/column';
 import Row from '../../components/row/row';
 import Typography from '../../components/typography/typography';

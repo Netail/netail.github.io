@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { FiStar } from 'react-icons/fi';
 import Link from '../link/link';
 

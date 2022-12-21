@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { Project } from '../../interfaces/project';
+import type { FC } from 'react';
+import type { Project } from '../../interfaces/project';
 import Typography from '../typography/typography';
 
 import css from './project-preview.module.scss';

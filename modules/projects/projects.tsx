@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import Column from '../../components/column/column';
 import ProjectPreview from '../../components/project-preview/project-preview';
 import Row from '../../components/row/row';
-import { Project } from '../../interfaces/project';
+import type { Project } from '../../interfaces/project';
 
 interface ProjectsProps { 
     projects: Project[];

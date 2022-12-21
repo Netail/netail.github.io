@@ -1,9 +1,9 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import CareerPreview from '../../components/career-preview/career-preview';
 import Column from '../../components/column/column';
 import Row from '../../components/row/row';
 import Typography from '../../components/typography/typography';
-import { Career } from '../../interfaces/career';
+import type { Career } from '../../interfaces/career';
 
 import css from './career.module.scss';
 

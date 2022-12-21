@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { FiArrowUpRight } from 'react-icons/fi';
 import Typography from '../typography/typography';
 

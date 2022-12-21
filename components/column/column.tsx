@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react';
+import type { FC, HTMLAttributes } from 'react';
 import classnames from 'classnames';
 
 import css from './column.module.scss';
@@ -40,6 +40,6 @@ const Column: FC<ColumnProps> = ({
             { children }
         </div>
     );
-};
+}
 
 export default Column;

@@ -1,4 +1,4 @@
-import { Project } from '../interfaces/project';
+import type { Project } from '../interfaces/project';
 
 export const PROJECTS: Project[] = [
     {
@@ -30,5 +30,5 @@ export const PROJECTS: Project[] = [
         image: '/assets/img/bollie.jpg',
         title: 'Bollie',
         description: 'A third-party Bol.com orders/inventory management Android application',
-    }
+    },
 ];

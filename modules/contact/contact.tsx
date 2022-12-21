@@ -1,9 +1,9 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import Column from '../../components/column/column';
 import Link from '../../components/link/link';
 import Row from '../../components/row/row';
 import Typography from '../../components/typography/typography';
-import { Contact } from '../../interfaces/contact';
+import type { Contact } from '../../interfaces/contact';
 
 interface ContactProps {
     contact: Contact[];

@@ -1,4 +1,4 @@
-import { Career } from '../interfaces/career';
+import type { Career } from '../interfaces/career';
 
 export const CAREER: Career[] = [
     {
@@ -19,5 +19,5 @@ export const CAREER: Career[] = [
         company: 'Amsterdam University of Applied Sciences',
         location: 'Amsterdam',
         begin: 'Sept 2019',
-    }
+    },
 ];

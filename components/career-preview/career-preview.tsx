@@ -1,10 +1,8 @@
-import { FC } from 'react';
-import { Career } from '../../interfaces/career';
+import type { FC } from 'react';
+import type { Career } from '../../interfaces/career';
 import Column from '../column/column';
 import Row from '../row/row';
 import Typography from '../typography/typography';
-
-import css from './career-preview.module.scss';
 
 interface CareerPreviewProps { 
     career: Career;

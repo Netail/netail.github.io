@@ -17,12 +17,7 @@ interface ColumnProps extends HTMLAttributes<HTMLElement> {
     size?: ResponsiveSize;
 }
 
-const Column: FC<ColumnProps> = ({
-    children,
-    className,
-    size,
-    ...props
-}) => {
+const Column: FC<ColumnProps> = ({ children, className, size, ...props }) => {
     const classes = classnames(
         css.column,
 
@@ -32,14 +27,14 @@ const Column: FC<ColumnProps> = ({
         size?.lg && css[`lg-${size.lg}`],
         size?.xl && css[`xl-${size.xl}`],
 
-        className,
+        className
     );
 
     return (
         <div className={classes} {...props}>
-            { children }
+            {children}
         </div>
     );
-}
+};
 
 export default Column;

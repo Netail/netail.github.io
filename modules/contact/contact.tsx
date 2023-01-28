@@ -26,6 +26,6 @@ const Contact: FC<ContactProps> = ({ contact }) => {
             </Column>
         </Row>
     );
-}
+};
 
 export default Contact;

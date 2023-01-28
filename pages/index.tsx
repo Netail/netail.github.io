@@ -14,7 +14,7 @@ import { CONTACT } from '../constants/contact';
 const Index: NextPage = () => {
     return (
         <>
-            <Navigation/>
+            <Navigation />
             <Container>
                 <Row direction='column' spacingRow={16}>
                     <Banner />
@@ -23,9 +23,9 @@ const Index: NextPage = () => {
                     <Career career={CAREER} />
                     <Contact contact={CONTACT} />
                 </Row>
-            </Container> 
+            </Container>
         </>
     );
-}
+};
 
 export default Index;

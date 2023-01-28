@@ -4,7 +4,7 @@ import ProjectPreview from '../../components/project-preview/project-preview';
 import Row from '../../components/row/row';
 import type { Project } from '../../interfaces/project';
 
-interface ProjectsProps { 
+interface ProjectsProps {
     projects: Project[];
 }
 
@@ -18,6 +18,6 @@ const Projects: FC<ProjectsProps> = ({ projects }) => {
             ))}
         </Row>
     );
-}
+};
 
 export default Projects;

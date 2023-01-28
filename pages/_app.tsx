@@ -7,11 +7,14 @@ const App = ({ Component, pageProps }: AppProps) => {
         <>
             <Head>
                 <title>Maikel van Dort</title>
-                <meta name='description' content='Portfolio of Maikel van Dort' />
+                <meta
+                    name='description'
+                    content='Portfolio of Maikel van Dort'
+                />
             </Head>
             <Component {...pageProps} />
         </>
     );
-}
+};
 
 export default App;

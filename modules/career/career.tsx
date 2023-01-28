@@ -7,7 +7,7 @@ import type { Career } from '../../interfaces/career';
 
 import css from './career.module.scss';
 
-interface ClientsProps { 
+interface ClientsProps {
     career: Career[];
 }
 
@@ -15,7 +15,12 @@ const Career: FC<ClientsProps> = ({ career }) => {
     return (
         <Row>
             <Column size={{ xs: 12, lg: 6 }}>
-                <Typography variant='heading2' style={{ position: 'sticky', top: '0' }}>Career</Typography>
+                <Typography
+                    variant='heading2'
+                    style={{ position: 'sticky', top: '0' }}
+                >
+                    Career
+                </Typography>
             </Column>
             <Column size={{ xs: 12, lg: 6 }}>
                 <div className={css.wrapper}>
@@ -26,6 +31,6 @@ const Career: FC<ClientsProps> = ({ career }) => {
             </Column>
         </Row>
     );
-}
+};
 
 export default Career;

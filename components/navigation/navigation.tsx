@@ -4,15 +4,18 @@ import Link from '../link/link';
 
 import css from './navigation.module.scss';
 
-interface NavigationProps { }
+interface NavigationProps {}
 
 const Navigation: FC<NavigationProps> = () => {
     return (
         <nav className={css.nav}>
             <FiStar className={css.icon} />
-            <Link label='maikel.van.dort@gmail.com' href='mailto:maikel.van.dort@gmail.com' />
+            <Link
+                label='maikel.van.dort@gmail.com'
+                href='mailto:maikel.van.dort@gmail.com'
+            />
         </nav>
     );
-}
+};
 
 export default Navigation;

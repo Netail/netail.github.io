@@ -1,37 +1,37 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [main]
+    push:
+        branches: [main]
 
 jobs:
-  build:
-    name: Build NextJS application
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    build:
+        name: Build NextJS application
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
 
-      - name: Node setup
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          cache: 'yarn'
+            - name: Node setup
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18
+                  cache: 'yarn'
 
-      - name: Install packages
-        run: yarn install --frozen-lockfile
+            - name: Install packages
+              run: yarn install --frozen-lockfile
 
-      - name: Build
-        run: yarn build
+            - name: Build
+              run: yarn build
 
-      - name: Export
-        run: yarn export
+            - name: Export
+              run: yarn export
 
-      - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
+            - name: Add .nojekyll file
+              run: touch ./out/.nojekyll
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: out
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@4.1.1
+              with:
+                  branch: gh-pages
+                  folder: out

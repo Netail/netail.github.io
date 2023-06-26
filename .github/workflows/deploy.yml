@@ -17,6 +17,7 @@ jobs:
               with:
                   node-version: 18
                   cache: 'yarn'
+                  token: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Install packages
               run: yarn install --frozen-lockfile

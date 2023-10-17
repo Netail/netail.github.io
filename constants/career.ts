@@ -2,10 +2,17 @@ import type { Career } from '../interfaces/career';
 
 export const CAREER: Career[] = [
     {
+        title: 'DevOps Engineer',
+        company: 'Albert Heijn',
+        location: 'Zaandam',
+        begin: 'Oct 2023',
+    },
+    {
         title: 'Frontend Developer Intern',
         company: 'Bravoure',
         location: 'Amsterdam',
         begin: 'Feb 2023',
+        end: 'July 2023',
     },
     {
         title: 'DevOps Engineer',

@@ -6,7 +6,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     return (
         <>
             <Head>
-                <title>Maikel van Dort</title>
+                <title>Maikel</title>
                 <meta
                     name='description'
                     content='Portfolio of Maikel van Dort'

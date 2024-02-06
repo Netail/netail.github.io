@@ -7,15 +7,12 @@ import css from './navigation.module.scss';
 interface NavigationProps {}
 
 const Navigation: FC<NavigationProps> = () => {
-    return (
-        <nav className={css.nav}>
-            <FiStar className={css.icon} />
-            <Link
-                label='maikel.van.dort@gmail.com'
-                href='mailto:maikel.van.dort@gmail.com'
-            />
-        </nav>
-    );
+  return (
+    <nav className={css.nav}>
+      <FiStar className={css.icon} />
+      <Link label='Contact' href='#contact' target='_self' />
+    </nav>
+  );
 };
 
 export default Navigation;

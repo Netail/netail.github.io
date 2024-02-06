@@ -8,6 +8,7 @@ body {
     font-family: Epilogue, serif;;
     background-color: $color-background-primary;
     color: $color-foreground-primary;
+    scroll-behavior: smooth;
 }
 
 a {

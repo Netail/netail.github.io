@@ -23,8 +23,8 @@ const About: FC = () => {
                     work.
                     <br /> <br />
                     As a Software Engineer I enjoy working with the Next.JS,
-                    Node.JS, Spring boot and Postgres Tech Stack, but always
-                    want to try new technologies.
+                    Typescript, Sass, Spring Boot Kotlin and Postgres Tech Stack, but always
+                    want to try new frameworks & tooling.
                 </Typography>
             </Column>
         </Row>

@@ -19,7 +19,6 @@
     "react-icons": "^4.10.1"
   },
   "devDependencies": {
-    "@netail/linting-config": "1.2.0",
     "@types/node": "18.11.18",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",

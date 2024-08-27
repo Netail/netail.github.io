@@ -38,7 +38,7 @@ export const PROJECTS: Project[] = [
         title: 'Weight Tracker dApp + Smart Contract',
         description:
             'A blockchain dApp interacting with an Ethereum smart contract',
-        href: 'https://github.com/Netail/hva-blockchain-development'
+        href: 'https://github.com/Netail/hva-blockchain-development',
     },
     {
         image: '/assets/img/bollie.jpg',

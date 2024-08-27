@@ -18,10 +18,11 @@ const ProjectPreview: FC<ProjectProps> = ({ project }) => {
                 src={project.image}
                 alt='Project image'
             />
-            {project.href
-                ? <Link href={project.href} label={project.title} />
-                : <Typography variant='title'>{project.title}</Typography>
-            }
+            {project.href ? (
+                <Link href={project.href} label={project.title} />
+            ) : (
+                <Typography variant='title'>{project.title}</Typography>
+            )}
             <Typography variant='subtitle' sub>
                 {project.description}
             </Typography>

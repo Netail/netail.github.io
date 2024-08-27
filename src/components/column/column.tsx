@@ -1,5 +1,5 @@
 import type { FC, HTMLAttributes } from 'react';
-import classnames from 'classnames';
+import classnames from 'clsx';
 
 import css from './column.module.scss';
 

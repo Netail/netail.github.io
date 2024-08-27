@@ -1,5 +1,5 @@
 import type { FC, HTMLAttributes, ReactHTML } from 'react';
-import classNames from 'classnames';
+import classNames from 'clsx';
 
 import css from './typography.module.scss';
 

@@ -2,14 +2,25 @@
 @import '../../styles/mq';
 
 .nav {
-    padding: 2rem;
     top: 0;
     position: sticky;
     background-color: rgba($color-background-primary, 0.7);
     display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.progress {
+    height: 5px;
+    background: $color-foreground-primary;
+    transform-origin: 0%;
+}
+
+.items {
+    padding: 2rem;
+    display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 100%;
 
     @include mq($to: lg) {
         display: none;

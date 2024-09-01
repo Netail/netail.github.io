@@ -1,9 +1,10 @@
 import type { FC } from 'react';
 import type { Project } from '../../interfaces/project';
 import Typography from '../typography/typography';
+import Link from '../link/link';
+import { motion } from 'framer-motion';
 
 import css from './project-preview.module.scss';
-import Link from '../link/link';
 
 interface ProjectProps {
     project: Project;
@@ -11,7 +12,11 @@ interface ProjectProps {
 
 const ProjectPreview: FC<ProjectProps> = ({ project }) => {
     return (
-        <div className={css.wrapper}>
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className={css.wrapper}
+        >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
                 className={css.image}
@@ -26,7 +31,7 @@ const ProjectPreview: FC<ProjectProps> = ({ project }) => {
             <Typography variant='subtitle' sub>
                 {project.description}
             </Typography>
-        </div>
+        </motion.div>
     );
 };
 

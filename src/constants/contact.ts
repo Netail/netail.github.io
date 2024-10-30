@@ -15,6 +15,6 @@ export const CONTACT: Contact[] = [
     },
     {
         label: 'Mail',
-        href: 'mailto:maikel.van.dort@gmail.com',
+        href: 'mailto:maikel@netail.dev',
     },
 ];

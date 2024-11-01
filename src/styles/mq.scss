@@ -1,5 +1,5 @@
-@use 'sass:map';
-@import '../styles/variables/breakpoints';
+@use '../styles/variables/breakpoints' as breakpoints;
+@use 'sass:meta';
 
 @mixin mq($from: false, $to: false) {
     $min-width: 0;
@@ -7,18 +7,18 @@
     $query: '';
 
     @if $from {
-        @if type-of($from) == number {
+        @if meta.type-of($from) == number {
             $min-width: $from;
         } @else {
-            $min-width: get-breakpoint($from, min);
+            $min-width: breakpoints.get-breakpoint($from, min);
         }
     }
 
     @if $to {
-        @if type-of($to) == number {
+        @if meta.type-of($to) == number {
             $max-width: $to;
         } @else {
-            $max-width: get-breakpoint($to, max);
+            $max-width: breakpoints.get-breakpoint($to, max);
         }
     }
 

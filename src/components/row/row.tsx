@@ -26,7 +26,7 @@ const Row: FC<RowProps> = ({
         css[`direction-${direction}`],
         spacingRow > 0 && css[`spacing-row-${spacingRow}`],
         spacingColumn > 0 && css[`spacing-column-${spacingColumn}`],
-        className
+        className,
     );
 
     return (

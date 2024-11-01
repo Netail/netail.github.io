@@ -16,7 +16,7 @@ const Index: NextPage = () => {
         <>
             <Navigation />
             <Container>
-                <Row direction='column' spacingRow={16}>
+                <Row direction="column" spacingRow={16}>
                     <Banner />
                     <Projects projects={PROJECTS} />
                     <About />

@@ -16,7 +16,7 @@ const Career: FC<ClientsProps> = ({ career }) => {
         <Row>
             <Column size={{ xs: 12, lg: 6 }}>
                 <Typography
-                    variant='heading2'
+                    variant="heading2"
                     style={{ position: 'sticky', top: '0' }}
                 >
                     Career

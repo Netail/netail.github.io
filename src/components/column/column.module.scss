@@ -1,13 +1,13 @@
-@import '../../styles/variables/breakpoints';
-@import '../../styles/mq';
+@use '../../styles/variables/breakpoints' as breakpoints;
+@use '../../styles/mq' as mq;
 
 .column {
     flex-grow: 0;
     flex-basis: auto;
 }
 
-@each $key, $value in $breakpoints {
-    @include mq($from:$key) {
+@each $key, $value in breakpoints.$breakpoints {
+    @include mq.mq($from:$key) {
         @for $i from 1 through 12 {
             .#{$key}-#{$i} {
                 width: calc(#{$i} / 12 * 100%);

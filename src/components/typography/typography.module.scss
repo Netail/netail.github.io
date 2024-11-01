@@ -1,4 +1,4 @@
-@import '../../styles/mq';
+@use '../../styles/mq' as mq;
 
 .typography {
     margin: 0;
@@ -9,7 +9,7 @@
     font-weight: 400;
     line-height: 1.2em;
 
-    @include mq($from: lg) {
+    @include mq.mq($from: lg) {
         font-size: 115px;
     }
 }
@@ -19,7 +19,7 @@
     font-weight: 400;
     line-height: 1.2em;;
 
-    @include mq($from: lg) {
+    @include mq.mq($from: lg) {
         font-size: 72px;
     }
 }

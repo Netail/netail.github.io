@@ -21,14 +21,14 @@ const ProjectPreview: FC<ProjectProps> = ({ project }) => {
             <img
                 className={css.image}
                 src={project.image}
-                alt='Project image'
+                alt="Project image"
             />
             {project.href ? (
                 <Link href={project.href} label={project.title} />
             ) : (
-                <Typography variant='title'>{project.title}</Typography>
+                <Typography variant="title">{project.title}</Typography>
             )}
-            <Typography variant='subtitle' sub>
+            <Typography variant="subtitle" sub>
                 {project.description}
             </Typography>
         </motion.div>

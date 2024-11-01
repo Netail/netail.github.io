@@ -1,0 +1,52 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "vcs": {
+        "enabled": false,
+        "clientKind": "git",
+        "defaultBranch": "main"
+    },
+    "files": {
+        "include": [
+            "**/*.js",
+            "**/*.jsx",
+            "**/*.ts",
+            "**/*.tsx",
+            "**/*.graphql",
+            "**/*.json"
+        ],
+        "ignore": [
+            ".github/workflows",
+            "build",
+            "coverage",
+            "dist",
+            ".npm",
+            ".git",
+            ".turbo",
+            ".idea",
+            ".next",
+            ".log",
+            "node_modules",
+            "*.d.ts",
+            "_generated-*.ts"
+        ]
+    },
+    "formatter": {
+        "enabled": true,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 80,
+        "lineEnding": "lf"
+    },
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "single",
+            "jsxQuoteStyle": "double",
+            "arrowParentheses": "asNeeded"
+        }
+    },
+    "json": {
+        "formatter": {
+            "lineWidth": 1
+        }
+    }
+}

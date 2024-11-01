@@ -27,7 +27,7 @@ const Column: FC<ColumnProps> = ({ children, className, size, ...props }) => {
         size?.lg && css[`lg-${size.lg}`],
         size?.xl && css[`xl-${size.xl}`],
 
-        className
+        className,
     );
 
     return (

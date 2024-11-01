@@ -45,7 +45,7 @@ const Typography: FC<TypographyProps> = ({
         css[variant],
         css[`align-${align}`],
         sub && css.sub,
-        className
+        className,
     );
 
     return (

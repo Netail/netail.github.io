@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Release to GitHub Pages
 
 on:
     push:
@@ -11,12 +11,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Node setup
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
-                  node-version: 20
+                  node-version: 22
                   cache: 'yarn'
                   token: ${{ secrets.GITHUB_TOKEN }}
                   registry-url: 'https://npm.pkg.github.com'
@@ -34,7 +34,7 @@ jobs:
               run: touch ./out/.nojekyll
 
             - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v4.6.0
+              uses: JamesIves/github-pages-deploy-action@v4.6.8
               with:
                   branch: gh-pages
                   folder: out

@@ -13,7 +13,7 @@ const Contact: FC<ContactProps> = ({ contact }) => {
     return (
         <Row>
             <Column size={{ xs: 12, lg: 6 }}>
-                <Typography variant='heading2' id='contact'>
+                <Typography variant="heading2" id="contact">
                     Contact
                 </Typography>
             </Column>

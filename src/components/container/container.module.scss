@@ -1,11 +1,11 @@
-@import '../../styles/mq';
+@use '../../styles/mq' as mq;
 
 .container {
     max-width: 1240px;
     padding: 0 0.5rem;
     margin: 64px auto;
 
-    @include mq($from: lg) {
+    @include mq.mq($from: lg) {
         padding: 0 1rem;
     }
 }

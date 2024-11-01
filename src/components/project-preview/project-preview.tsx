@@ -1,8 +1,8 @@
+import { motion } from 'framer-motion';
 import type { FC } from 'react';
 import type { Project } from '../../interfaces/project';
-import Typography from '../typography/typography';
 import Link from '../link/link';
-import { motion } from 'framer-motion';
+import Typography from '../typography/typography';
 
 import css from './project-preview.module.scss';
 
@@ -21,7 +21,7 @@ const ProjectPreview: FC<ProjectProps> = ({ project }) => {
             <img
                 className={css.image}
                 src={project.image}
-                alt="Project image"
+                alt={`Project ${project.title}`}
             />
             {project.href ? (
                 <Link href={project.href} label={project.title} />

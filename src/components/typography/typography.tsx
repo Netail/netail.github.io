@@ -1,5 +1,5 @@
-import type { FC, HTMLAttributes, ReactHTML } from 'react';
 import classNames from 'clsx';
+import type { FC, HTMLAttributes } from 'react';
 
 import css from './typography.module.scss';
 
@@ -13,8 +13,9 @@ type Variant =
     | 'body2';
 
 type Align = 'left' | 'center' | 'right';
+type Elements = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
 
-const VariantTags: { [key in Variant]: keyof ReactHTML } = {
+const VariantTags: { [key in Variant]: Elements } = {
     heading1: 'h1',
     heading2: 'h2',
     heading3: 'h3',
@@ -28,7 +29,7 @@ interface TypographyProps extends HTMLAttributes<HTMLElement> {
     variant?: Variant;
     align?: Align;
     sub?: boolean;
-    as?: keyof ReactHTML;
+    as?: Elements;
 }
 
 const Typography: FC<TypographyProps> = ({

@@ -11,7 +11,7 @@ interface ClientsProps {
     career: Career[];
 }
 
-const Career: FC<ClientsProps> = ({ career }) => {
+const CareerItem: FC<ClientsProps> = ({ career }) => {
     return (
         <Row>
             <Column size={{ xs: 12, lg: 6 }}>
@@ -24,8 +24,8 @@ const Career: FC<ClientsProps> = ({ career }) => {
             </Column>
             <Column size={{ xs: 12, lg: 6 }}>
                 <div className={css.wrapper}>
-                    {career.map((career, index) => (
-                        <CareerPreview career={career} key={index} />
+                    {career.map(career => (
+                        <CareerPreview career={career} key={career.begin} />
                     ))}
                 </div>
             </Column>
@@ -33,4 +33,4 @@ const Career: FC<ClientsProps> = ({ career }) => {
     );
 };
 
-export default Career;
+export default CareerItem;

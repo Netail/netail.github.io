@@ -1,5 +1,5 @@
-import type { FC, HTMLAttributes } from 'react';
 import classNames from 'clsx';
+import type { FC, HTMLAttributes } from 'react';
 
 import css from './container.module.scss';
 

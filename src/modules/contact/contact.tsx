@@ -9,7 +9,7 @@ interface ContactProps {
     contact: Contact[];
 }
 
-const Contact: FC<ContactProps> = ({ contact }) => {
+const ContactItem: FC<ContactProps> = ({ contact }) => {
     return (
         <Row>
             <Column size={{ xs: 12, lg: 6 }}>
@@ -19,8 +19,8 @@ const Contact: FC<ContactProps> = ({ contact }) => {
             </Column>
             <Column size={{ xs: 12, lg: 6 }}>
                 <Row>
-                    {contact.map((contact, index) => (
-                        <Column size={{ xs: 6 }} key={index}>
+                    {contact.map(contact => (
+                        <Column size={{ xs: 6 }} key={contact.label}>
                             <Link label={contact.label} href={contact.href} />
                         </Column>
                     ))}
@@ -30,4 +30,4 @@ const Contact: FC<ContactProps> = ({ contact }) => {
     );
 };
 
-export default Contact;
+export default ContactItem;

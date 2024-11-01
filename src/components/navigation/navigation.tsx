@@ -1,13 +1,11 @@
+import { motion, useScroll, useSpring } from 'framer-motion';
 import type { FC } from 'react';
 import { FiStar } from 'react-icons/fi';
 import Link from '../link/link';
-import { useScroll, useSpring, motion } from 'framer-motion';
 
 import css from './navigation.module.scss';
 
-interface NavigationProps {}
-
-const Navigation: FC<NavigationProps> = () => {
+const Navigation: FC = () => {
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,

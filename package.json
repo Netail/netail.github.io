@@ -10,8 +10,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "format": "biome format",
-        "format:fix": "biome format --write"
+        "format": "biome check",
+        "format:fix": "biome check --write"
     },
     "dependencies": {
         "clsx": "^2.1.1",

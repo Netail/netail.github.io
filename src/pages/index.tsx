@@ -1,15 +1,15 @@
 import type { NextPage } from 'next';
-import Navigation from '../components/navigation/navigation';
 import Container from '../components/container/container';
+import Navigation from '../components/navigation/navigation';
 import Row from '../components/row/row';
-import Banner from '../modules/banner/banner';
-import Projects from '../modules/projects/projects';
-import Career from '../modules/career/career';
-import About from '../modules/about/about';
-import Contact from '../modules/contact/contact';
-import { PROJECTS } from '../constants/projects';
 import { CAREER } from '../constants/career';
 import { CONTACT } from '../constants/contact';
+import { PROJECTS } from '../constants/projects';
+import About from '../modules/about/about';
+import Banner from '../modules/banner/banner';
+import Career from '../modules/career/career';
+import Contact from '../modules/contact/contact';
+import Projects from '../modules/projects/projects';
 
 const Index: NextPage = () => {
     return (

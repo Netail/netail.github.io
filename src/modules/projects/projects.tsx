@@ -11,8 +11,8 @@ interface ProjectsProps {
 const Projects: FC<ProjectsProps> = ({ projects }) => {
     return (
         <Row spacingColumn={2} spacingRow={4}>
-            {projects.map((project, index) => (
-                <Column size={{ xs: 12, lg: 6 }} key={index}>
+            {projects.map(project => (
+                <Column size={{ xs: 12, lg: 6 }} key={project.title}>
                     <ProjectPreview project={project} />
                 </Column>
             ))}

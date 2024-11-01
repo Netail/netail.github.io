@@ -12,7 +12,7 @@ const Banner: FC = () => {
                 <Typography variant="heading1">Maikel</Typography>
             </Column>
             <Column size={{ xs: 12, xl: 6 }}>
-                <Typography variant="heading3" sub>
+                <Typography variant="heading3" sub as="h2">
                     Hello there! My name is Maikel and I am a full stack
                     engineer from The Netherlands.
                 </Typography>

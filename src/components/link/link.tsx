@@ -13,7 +13,10 @@ interface LinkProps {
 const Link: FC<LinkProps> = ({ label, href, target = '_blank' }) => {
     return (
         <a href={href} target={target} rel="noreferrer" className={css.link}>
-            <Typography variant="title">{label}</Typography> <FiArrowUpRight />
+            <Typography variant="title" as="h3">
+                {label}
+            </Typography>{' '}
+            <FiArrowUpRight />
         </a>
     );
 };

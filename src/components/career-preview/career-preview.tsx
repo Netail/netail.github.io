@@ -17,8 +17,8 @@ const CareerPreview: FC<CareerPreviewProps> = ({ career }) => {
                 </Typography>
             </Column>
             <Column size={{ xs: 12, lg: 6 }}>
-                <Typography variant="title" align="left" sub>
-                    {career.begin}-{career.end ?? 'Current'}
+                <Typography variant="title" align="left" sub suppressHydrationWarning>
+                    {career.begin.toLocaleString('en-GB', { month: 'short', year: 'numeric' })} - {career.end?.toLocaleString('en-GB', { month: 'short', year: 'numeric' }) ?? 'Current'}
                 </Typography>
             </Column>
             <Column>

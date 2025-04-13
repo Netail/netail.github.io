@@ -17,10 +17,6 @@ const Navigation: FC = () => {
         <>
             <nav className={css.nav}>
                 <motion.div className={css.progress} style={{ scaleX }} />
-                <div className={css.items}>
-                    <FiStar className={css.icon} />
-                    <Link label="Contact" href="#contact" target="_self" />
-                </div>
             </nav>
         </>
     );

@@ -25,7 +25,7 @@ const CareerItem: FC<ClientsProps> = ({ career }) => {
             <Column size={{ xs: 12, lg: 6 }}>
                 <div className={css.wrapper}>
                     {career.map(career => (
-                        <CareerPreview career={career} key={career.begin} />
+                        <CareerPreview career={career} key={career.begin.toISOString()} />
                     ))}
                 </div>
             </Column>

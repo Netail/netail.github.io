@@ -9,7 +9,7 @@ export const PROJECTS: Project[] = [
         href: 'https://www.ah.nl/allerhande',
     },
     {
-        image: '/assets/img/frog.jpg',
+        image: '/assets/img/github-action.png',
         title: 'Webhook Notifier',
         description:
             'A Github Action to send the same message to multiple webhooks at once',

@@ -1,40 +1,46 @@
 name: Release to GitHub Pages
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
-    build:
-        name: Build NextJS application
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v4
+  build:
+    name: Build NextJS application
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
 
-            - name: Node setup
-              uses: actions/setup-node@v4
-              with:
-                  node-version: 22
-                  cache: 'yarn'
-                  token: ${{ secrets.GITHUB_TOKEN }}
-                  registry-url: 'https://npm.pkg.github.com'
-                  scope: '@netail'
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
 
-            - name: Install packages
-              run: yarn install --frozen-lockfile
+      - name: Node setup
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: "pnpm"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@netail'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-            - name: Build
-              run: yarn build
+      - name: Install dependencies
+        run: pnpm install
 
-            - name: Add .nojekyll file
-              run: touch ./out/.nojekyll
+      - name: Build
+        run: pnpm build
 
-            - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v4.6.8
-              with:
-                  branch: gh-pages
-                  folder: out
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.7.3
+        with:
+          branch: gh-pages
+          folder: out

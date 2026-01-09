@@ -4,7 +4,7 @@ import Navigation from "../components/navigation/navigation";
 import Row from "../components/row/row";
 import { CAREER } from "../constants/career";
 import { CONTACT } from "../constants/contact";
-import { PROJECTS } from "../constants/projects";
+import { PROJECTS, SIDE_PROJECTS } from "../constants/projects";
 import About from "../modules/about/about";
 import Banner from "../modules/banner/banner";
 import Career from "../modules/career/career";
@@ -19,6 +19,7 @@ const Index: NextPage = () => {
 				<Row direction="column" spacingRow={16}>
 					<Banner />
 					<Projects projects={PROJECTS} />
+					<Projects projects={SIDE_PROJECTS} />
 					<About />
 					<Career career={CAREER} />
 					<Contact contact={CONTACT} />

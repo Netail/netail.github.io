@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import type { FC } from "react";
 import type { Project } from "../../interfaces/project";
 import Link from "../link/link";

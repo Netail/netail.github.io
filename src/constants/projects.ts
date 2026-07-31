@@ -22,6 +22,12 @@ export const PROJECTS: Project[] = [
 		href: "https://netail.dev/guess-the-jam",
 	},
 	{
+		image: "/assets/img/sire.png",
+		title: "Sire",
+		description: "An independent Dutch nonprofit organization that creates campaigns to highlight important social issues and encourage positive societal change",
+		href: "https://sire.nl/",
+	},
+	{
 		image: "/assets/img/stock-finder.jpg",
 		title: "Albert Heijn - Product Finder",
 		description:

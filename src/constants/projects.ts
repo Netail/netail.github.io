@@ -24,7 +24,8 @@ export const PROJECTS: Project[] = [
 	{
 		image: "/assets/img/sire.png",
 		title: "Sire",
-		description: "An independent Dutch nonprofit organization that creates campaigns to highlight important social issues and encourage positive societal change",
+		description:
+			"An independent Dutch nonprofit organization that creates campaigns to highlight important social issues and encourage positive societal change",
 		href: "https://sire.nl/",
 	},
 	{
